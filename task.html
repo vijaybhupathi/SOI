@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+
+<style>
+    img{
+        width: 100%;
+        height: 450px;
+    }
+    #slider{
+        width: 800px;
+        height: 450px;
+        margin: 20px auto;
+        position: relative;
+    }
+    button{
+        padding: 20px;
+        border: none;
+        background: yellow;
+        top: 40%;
+        position: absolute;
+    }
+    
+    .btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: none;
+    background: yellow;
+    border-radius: 25px;
+    top: 200px;
+    }
+    #next{
+        position: relative;
+        float: right;
+    }
+    .slides{
+        height:100%;
+        width:100%; 
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+    <div id="slider">
+        <div id="box">
+        <img class="slides" src="https://wallpaperbrowse.com/media/images/th.jpg">
+        
+        <img class="slides" src="https://wallpaperbrowse.com/media/images/th.jpg">
+        <img class="slides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl95KsV7it8tHtCozOfIawUmFqEXBkc_X2noxZDYdhbEv2JlwK">
+        <img class="slides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTRqrlfB-tEUUOKJgbCO7LM2NbDRR7WdaZi8KRwCQfln1OK3Ct">
+        <img class="slides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmpkOPFIsUR1fOEnqCzVh982_2YBrk8Thx57PAF_dEiowXQzI">
+        <img class="slides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7UrOKhpR7yRh28bmDCBKHuw4w9Ik5rrLolsBEnbiM_VMZthIAwg">
+        <img class="slides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2qyBUzGaQPYzvSSg7TM0g20W2okGlGFqZHRv8FLMUjR5iR3jX">
+        
+        </div>
+
+        <button class="btn" id="prew" onclick="prewImage(-1)">-</button>
+        <button class="btn" id="next" onclick="nextImage(1)">+</button>
+    </div>
+
+    <div class="container" style="border:5px solid pink">
+        <div class="row">
+            <div class="col-sm ml-1" style="border:2px solid black;padding: 40px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYL8Bhl0za6lNIT2fmv34wjtVTPqz3_939uoYVfDxhtfCujE12oA" alt="" style="width: 100%;height: 100px">
+            </div>
+            <div class="col-sm ml-1" style="border:2px solid black;padding: 40px">
+            2
+            </div>
+            <div class="col-sm" style="border:2px solid black;padding: 40px">
+            3
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-sm ml-1" style="border:2px solid black;padding: 40px">
+            4
+            </div>
+            <div class="col-sm ml-1" style="border:2px solid black;padding: 40px">
+            5
+            </div>
+            <div class="col-sm" style="border:2px solid black;padding: 40px">
+            6
+            </div>
+        </div>
+    </div>
+
+    <h1>API Call</h1>
+    <div>
+        <div class="container">
+            <form action="/action_page.php" method="post">
+                <input type="text" name="" placeholder="Enter Somthing" class="mr-3 pl-3 pr-5">
+                <input type="submit" value="Submit" class="ml-5 pl-5 pr-5">
+            </form>
+            <div class="textarea mb-5">
+                <h4>Result</h4>
+                <input type="textarea" value="" style="padding:20%">
+            </div>
+        </div>
+    </div>
+    <script>
+        var slider_content = document.getElementById('box');
+        
+        var i = image.length;
+        
+        function nextImage(){
+            if(i<image.length){
+                i = i+1;
+            }else{
+                i = 1;
+            }
+            slider_content.innerHTML = "<img src="+image[i-1]+ ".jpg";
+        }
+
+        function prewImage(){
+            if(i<image.length+1 && i>1){
+                i = i-1;
+            }else{
+                i = image.l;
+            }
+            slider_content.innerHTML = "<img src="+image[i-1]+ ".jpg";
+        }
+    </script>
+</body>
+</html>

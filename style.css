@@ -1,0 +1,32 @@
+.container{
+    width: 80%;
+    height: 450px;
+    border: 1px solid green;
+    margin: 0 auto;
+    position: relative;
+}
+.container>.btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: none;
+    background: yellow;
+    border-radius: 25px;
+    top: 200px;
+}
+.container>#next{
+    position: relative;
+    float: right;
+}
+.slides{
+    height:100%;
+    width:100%; 
+    position: absolute;
+}
+.one{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+

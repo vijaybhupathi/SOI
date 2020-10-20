@@ -1,0 +1,359 @@
+/* Preparations */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-bold {
+    font-weight: 900;
+}
+
+.mt-10 {
+    margin-top: 10%;
+}
+
+.mb-10 {
+    margin-bottom: 10%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: blue
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, 
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.show {
+    color:blue;
+}
+
+/* Search BG */
+
+.search-bg {
+    background-image: url("../img/bg-search.png");
+    background-size: cover;
+}
+
+.video-bg {
+    background-image: url("../img/video-bg.png");
+    background-size: cover;
+    /* height: 600px; */
+}
+
+.input-search {
+    border: 1.5px solid #fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0%;
+}
+
+.btn-gradient-search {
+    width:200px; 
+    background-image: url("../img/button_gradient.png");
+    background-size: cover;
+    border: 1.5px solid #fff; 
+    color: #fff;
+    height: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 7px;
+    
+}
+
+#search-results{
+    border: 1.5px solid #fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0%;
+}
+
+.item{
+    border: 1.5px solid #fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0%;
+}
+
+
+
+/* Experimets */
+
+.col-cat-li {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 10px; /* Firefox */
+    column-gap: 10px;
+    
+    list-style: none;
+
+    padding-left: 0px;
+}
+
+.item {
+    background: #F1F2F3;
+    height: 350px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+}
+.owl-prev {
+    font-size: 100px;
+}
+
+.owl-next {
+    font-size: 100px;
+}
+
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    margin-left: -10px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    right: -10px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-prev i, .owl-next i {transform : scale(2,3); color: #ccc;}
+
+.btn-subscribe {
+    border-radius: 0px;
+    border: 2px solid #2699FF;
+    width: auto;
+}
+
+#SubscribeEmail {
+    border-radius: 0px;
+    border: 2px solid #2699FF;
+}
+
+.li-vid {
+    color: #1491FF;
+}
+
+.master-hover:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.simple-line {
+    width:100%;
+    height: 2px;
+    background: #fff;
+}
+
+.contact {
+    font-size: 18px;
+}
+/* Address */
+
+.black{
+    color:#4D4D4D;
+    font-size: 15px;
+}
+.color{
+    color:#5F6060
+}
+
+/* Search Page */
+
+.heading-search {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
+    font-size: 17px;
+}
+
+/* Request call back form */
+
+form{
+    text-align:left;
+    
+    padding-top: 3%;
+    padding-bottom: 0%;
+}
+
+
+div #formbody{
+    text-align: right; 
+    width: 90%; 
+    height:430px; 
+    margin-top: 140px;
+    margin-left: 150px;
+    background: #F5F5F5
+}
+
+#form{
+    font-family: 'Roboto';
+    padding-left:20px;
+    color: #6C6C6C;
+    font-size: 10px;
+}
+
+.area{
+    width: 90%;
+    padding: 20px;
+    background: #E7E7EA;
+    border: 0cm
+    
+}
+
+.button1{
+    background:black; 
+    color: white; 
+    width: 90%;
+    padding: 10px;
+    height:auto;
+    border: none
+}
+
+
+/* Search */
+
+#width{
+    padding-bottom: 200px;
+}
+
+#dropdown{
+
+    border: #6C6C6C;
+    padding-top: 50px;
+}
+
+
+.glyphicon{
+    padding-left: 50px;
+}
+#cover{
+    padding-right: 50px;
+}
+
+.box-visualizations {
+    /* height: 600px; */
+    width: 100%;
+    background-color: #F8F8F8;
+    border-radius: 33px;
+    border: rgb(62, 62, 124) solid 1px;
+}
+
+.search-results {
+    /* height: 600px; */
+    width: 100%;
+    background-color: #F8F8F8;
+    border-radius: 33px;
+    border: rgb(62, 62, 124) solid 1px;
+}
+
+.fa-angle-down{
+    padding-left:20px
+
+}
+
+.about {
+    background-image: url("../img/BigData.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+input {
+    height: 15px;
+    width: 15px;
+}
+#load{
+    padding-left: 41%;
+    padding-right: 41%;
+    margin-bottom: 20px
+}
+
+.comm {
+    border-top: rgb(231, 231, 231) solid .5px;
+}
+
+.navbar-btn {
+    border-radius: 25px;
+    color: #fff;
+}
+
+.login--box {
+    padding: 25px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+
+.navbar-nav {
+    color: #fff;
+}
+
+#navbars {
+    color: #fff;
+}
+
+.section-nav {
+    list-style: none;
+    border-left: rgb(182, 182, 182) 1px solid;
+    padding: 15px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+}
+
+/* Mobile Queries */
+
+@media only screen and (max-width: 640px) {
+    #load{
+        padding-left: 41%;
+        padding-right: 41%;
+        margin-bottom: 20px;
+    }
+    .over{
+        overflow: auto; 
+        height: 200px;
+    }
+    .btn-gradient-search {
+        width:100px; 
+        background-image: url("../img/button_gradient.png");
+        background-size: cover;
+        border: 1.5px solid #fff; 
+        color: #fff;
+        height: 48px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 7px;
+    }
+    .card{
+        margin-left: 20px;
+        margin-right: 20px
+    }
+    .account{
+        padding-left: 50px
+    }
+    
+}
